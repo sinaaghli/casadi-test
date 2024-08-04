@@ -43,8 +43,8 @@ int main() {
   }
   auto end = high_resolution_clock::now();
   // Print the result
-  std::cout << "The value of the original function at x = " << x_value << " is "
-            << result[0] << std::endl;
+  std::cout << "The value of the derivative function at x = " << x_value
+            << " is " << result[0] << std::endl;
   duration<double, std::micro> duration = end - start;
   std::cout << "time: " << duration.count() << std::endl;
 
