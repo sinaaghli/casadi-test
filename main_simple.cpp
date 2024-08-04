@@ -39,7 +39,7 @@ int main() {
   for (int ii = 0; ii < 1000; ii++) {
     DM x_eval = DM(ii * 0.5);
     std::vector<DM> arg = {x_eval};
-    result = original_function(arg);
+    result = derivative_function(arg);
   }
   auto end = high_resolution_clock::now();
   // Print the result
@@ -52,7 +52,7 @@ int main() {
   double res;
   for (int ii = 0; ii < 1000; ii++) {
     double val = ii * 0.5;
-    res = val * val + val + 1;
+    res = val + val + 1;
   }
   end = high_resolution_clock::now();
   duration = end - start;

@@ -16,7 +16,7 @@ set(CASADI_LIBRARY_DIR "/usr/local/lib")
 include_directories(${CASADI_INCLUDE_DIR})
 
 # Add executable target
-add_executable(casadi_example main.cpp)
+add_executable(casadi_example main_simple.cpp)
 
 # Link against CasADi libraries
 find_library(CASADI_LIB casadi HINTS ${CASADI_LIBRARY_DIR})
